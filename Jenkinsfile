@@ -26,11 +26,12 @@ podTemplate(containers: [
             }
         }
         stage('pthon coding') {
-            //git 'https://github.com/webdevprashant/jenkins-training-CI-CD-Day6.git'
+            git 'https://github.com/koyilada-rishi/programing.git'
             container('python') {
                 stage('python code') {
                     //sh 'mvn clean install'
-                    sh 'python -v'
+                    sh 'python programing/docker.py'
+                    sh 'cat Dockerfile'
                     
                 }
             }
