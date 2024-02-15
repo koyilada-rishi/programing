@@ -30,7 +30,7 @@ podTemplate(containers: [
             container('python') {
                 stage('python code') {
                     //sh 'mvn clean install'
-                    sh 'python programing/docker.py'
+                    sh 'python docker.py'
                     sh 'cat Dockerfile'
                     
                 }
