@@ -9,7 +9,7 @@ podTemplate(containers: [
             git 'https://github.com/webdevprashant/jenkins-training-CI-CD-Day6.git'
             container('maven') {
                 stage('Build a Maven project') {
-                    sh 'mvn clean install'
+                    //sh 'mvn clean install'
                     
                     sh 'ls -l target/'
 
